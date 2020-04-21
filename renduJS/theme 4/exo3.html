@@ -1,0 +1,19 @@
+<HTML>
+
+  <HEAD>
+    <H1> Les images sont belles </H1>
+    <link rel="stylesheet" href="exo3.css">
+  </HEAD>
+  <BODY>
+    <div class="conteneur">
+      <img onmouseover="passerDessus()" class="image" src="https://cdnfr2.img.sputniknews.com/images/102536/79/1025367927.jpg"><img onmouseover="passerDessus()" class="image" src="https://image.shutterstock.com/image-photo/mountains-during-sunset-beautiful-natural-260nw-407021107.jpg"><img onmouseover="passerDessus()" class="image" src="https://image.shutterstock.com/image-photo/mountains-during-sunset-beautiful-natural-260nw-407021107.jpg"><img onmouseover="passerDessus()" class="image" src="https://image.shutterstock.com/image-photo/mountains-during-sunset-beautiful-natural-260nw-407021107.jpg">
+    </div><div class="conteneur">
+      <img id="lol" src="">
+    </div>
+    <script>
+    function passerDessus(){
+      document.getElementById("lol").setAttribute("src",event.currentTarget.getAttribute("src"));
+    }
+    </script>
+  </BODY>
+</HTML>

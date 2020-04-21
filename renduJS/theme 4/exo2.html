@@ -1,0 +1,34 @@
+<HTML>
+
+<HEAD>
+ <H1> Aurelien Machu </H1>
+<BODY onload="pouet();">
+<script language="JavaScript"> 
+function pouet() {
+	numImage = 0;
+}
+
+function afficherImageSuivant(){
+	if (numImage < 3){
+		numImage ++;
+		element = document.getElementById(numImage).value;
+		document.getElementById("image").setAttribute("src",element);
+	}
+}
+function afficherImagePrecedent(){
+		if (numImage > 1){
+		numImage --;
+		element = document.getElementById(numImage).value;
+		document.getElementById("image").setAttribute("src",element);
+	}
+}
+</script>
+<b>Lien image 1 : </b><INPUT type="text" id="1" ><BR>
+<b>Lien image 2 : </b><INPUT type="text" id="2" ><BR>
+<b>Lien image 3 : </b><INPUT type="text" id="3" ><BR>
+<button onclick="afficherImageSuivant()" value="Suivant">Suivant</button>
+<button onclick="afficherImagePrecedent()" value="Precedent">Precedent</button><br>
+<img src="" id = "image" width="200" height="200">
+</BODY>
+</HEAD>
+</HTML>

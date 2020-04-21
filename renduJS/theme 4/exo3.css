@@ -1,0 +1,13 @@
+.conteneur{
+  width: 50%;
+  height: 400px;
+  display: inline-block;
+}
+#lol{
+  width: 400px;
+  height: 400px;
+}
+.image{
+  width: 33%;
+  display: inline-block;
+}

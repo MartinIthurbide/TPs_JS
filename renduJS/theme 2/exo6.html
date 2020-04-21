@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>Jour de votre naissance</title>
+		<SCRIPT LANGUAGE="JavaScript"> 
+			jour = ['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+			JourNaiss="";
+			//Une fonction qui renvoie le bon indice du jour de votre naissance
+			//Attention, l'ann�e doit �tre entre 1900 et 2001
+			var jourNaiss=prompt("Entrez votre jour de naissance :");
+			var mois=prompt("Entrez votre mois de naissance :");
+			var annee=prompt("Entrez votre année de naissance :");
+			jourDeNaissance(parseInt(jourNaiss),parseInt(mois),parseInt(annee));
+			function jourDeNaissance(j,m,a) {
+				
+				var f = 0;
+ 				var g = 0;
+ 				if (m <= 2) {
+ 					
+ 					g = a-1;
+ 					
+ 					f = m+13;
+    			} 
+    			else {
+    				
+    				g = a;
+    				
+    				f = m+1;
+    			}
+ 				jourChiffre = (Math.floor(365.25*g) + Math.floor(30.6001*f) + j-621049) % 7;
+			}
+
+			document.write("Votre jour de naissance est un " ,jour[jourChiffre]);
+		</SCRIPT>
+	</head>
+	<body>
+	</body>
+</html>

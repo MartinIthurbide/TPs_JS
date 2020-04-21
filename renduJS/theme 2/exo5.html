@@ -1,0 +1,37 @@
+<HTML>
+
+<HEAD>
+ <H1> Moyenne : </H1>
+</HEAD>
+<BODY>
+<script language="JavaScript">
+nom = new Array("Pierre","Paul","Jacques","Bastien");
+notes = new Array(13,3,15,2);
+</script>
+<script language="JavaScript">
+var nomEntree=prompt("Entrez votre prénom :");
+var indice = 0;
+var mention = "";
+for (i=0; i<=nom.length;i++)
+{
+	if (nomEntree == nom[i])
+		indice = i;
+		moyenne = notes[indice];
+}
+if (moyenne <10)
+	mention = "sans mention";
+else if(moyenne >= 10 && moyenne <15)
+	mention = "assez bien";
+else
+	mention = "bien";
+</script>
+<table border = 1>
+<tr>
+<script language="JavaScript">
+ document.write("<h2>",nomEntree,"<h2>");
+ document.write("<td>","Votre moyenne : ",moyenne,"</td>");
+ document.write("<td>","Votre mention : ",mention,"</td>");
+ </script>
+</tr>
+</BODY>
+</HTML>

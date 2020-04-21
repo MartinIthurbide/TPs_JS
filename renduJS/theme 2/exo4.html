@@ -1,0 +1,24 @@
+<HTML>
+
+<HEAD>
+ <H1> Martin </H1>
+</HEAD>
+<BODY>
+<script language="JavaScript">
+function getRandomInt(nbr)
+{
+	return Math.floor(1+Math.random()*nbr);
+}
+</script>
+<table border=1>
+<tr>
+<td>
+<span onclick ="window.location.reload()">Lancer</span>
+</td>
+	<script language="JavaScript">
+	document.write("<td>",getRandomInt(5),"</td>");
+</script>
+</tr>
+</table>
+</BODY>
+</HTML>

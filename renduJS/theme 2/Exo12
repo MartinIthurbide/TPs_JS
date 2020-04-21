@@ -1,0 +1,29 @@
+<HTML>
+
+<HEAD>
+ <H1> Martin </H1>
+</HEAD>
+<BODY>
+<script language="JavaScript"> 
+nomMois = new Array("Janvier","Fevrier","Mars","Avril","Mai","Juin","Juillet","Aout","Septembre","Octobre","Novembre","Decembre");
+nombreJour = new Array(31,28,31,30,31,30,31,31,30,31,30,31);
+</script>
+<Table>
+<tr>
+	<script language="JavaScript">
+	for (i = 0; i < nomMois.length; i++)
+	{
+		document.write("<td>",nomMois[i],"</td>")
+	}
+	</script>
+</tr>
+	<script language="JavaScript">
+	for (i = 0; i < nombreJour.length; i++)
+	{
+		document.write("<td>",nombreJour[i],"</td>")
+	}
+	</script>
+<tr>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,25 @@
+<HTML>
+
+<HEAD>
+ <H1> Palyndrome</H1>
+</HEAD>
+<BODY>
+<script language="JavaScript"> 
+var saisie=prompt("Saisir un mot : ");
+function estPalindrome(mot)
+{
+	var pal = "";
+	for(i=0;i<=mot.length;i++)
+	{
+		pal += mot.charAt(mot.length-i); 
+	}
+	if (pal == mot)
+		document.write("Vrai");
+	else
+		document.write("Faux");	
+}
+estPalindrome(saisie);
+</script>
+</table>
+</BODY>
+</HTML>
